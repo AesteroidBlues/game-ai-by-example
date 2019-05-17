@@ -1,0 +1,4 @@
+# VS Code junk
+.vscode/ipch/**
+
+[Bb]uilt/**
