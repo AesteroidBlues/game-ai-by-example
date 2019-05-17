@@ -3,7 +3,8 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/usr/local/Cellar/sfml/2.5.1/include"
             ],
             "defines": [],
             "macFrameworkPath": [

@@ -2,11 +2,11 @@ C=gcc
 CXX=g++
 CXXFLAGS=-std=c++11 -MMD -g
 
-INCLUDEDIR=-I/usr/local/include/ -Iinclude/
-LIBDIR=-L/usr/local/lib/
+INCLUDEDIR=-I/usr/local/include/ -Iinclude/ -I/usr/local/Cellar/sfml/2.5.1/include/
+LIBDIR=-L/usr/local/lib/ -L/usr/local/Cellar/sfml/2.5.1/lib/
 
 LIBS=
-FRAMEWORKS=
+FRAMEWORKS=-lsfml-window -lsfml-system
 
 SRCDIR=source
 OBJDIR=built/obj
