@@ -1,9 +1,16 @@
 #include <iostream>
-#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
+
+#include "core/resource_manager.h"
 
 int main()
 {
-    sf::Window window(sf::VideoMode(800, 600), "My window");
+    sf::RenderWindow window{ sf::VideoMode(800, 600), "My window" };
+    
+    GameAi::Core::ResourceManager manager{ };
+    sf::Texture tex = manager.GetTextureByName("sfml");
+    sf::Sprite sprite{ tex };
+
     while (window.isOpen())
     {
         sf::Event event;
@@ -15,6 +22,12 @@ int main()
                 window.close();
             }
         }
+
+        window.clear(sf::Color::Cyan);
+
+        window.draw(sprite);
+
+        window.display();
     }
 
     return 0;
