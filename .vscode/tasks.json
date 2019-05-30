@@ -32,7 +32,8 @@
             "type": "shell",
             "label": "Run",
             "command": "./built/bin/gameai",
-            "problemMatcher": []
+            "problemMatcher": [],
+            "dependsOn": "Build all",
         }
     ]
 }

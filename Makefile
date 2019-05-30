@@ -14,7 +14,7 @@ FRAMEWORKS=-lsfml-window -lsfml-system -lsfml-graphics
 
 CSRCFILES:=$(wildcard $(SRCDIR)/*.c)
 COBJFILES:=$(patsubst $(SRCDIR)/%.c,$(OBJDIR)/%.o,$(CSRCFILES))
-CPPSRCFILES:=$(wildcard $(SRCDIR)/*.cpp $(SRCDIR)/**/*.cpp)
+CPPSRCFILES:=$(shell find . -name "*.cpp")
 CPPOBJFILES:=$(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(CPPSRCFILES))
 
 all: gameai
