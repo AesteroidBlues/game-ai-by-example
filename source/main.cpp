@@ -9,8 +9,9 @@
 
 int main()
 {
-    GameAi::Ch2::Sim sim;
+    std::cout << "Starting" << std::endl;
     
+    GameAi::Ch2::Sim sim;
     while (true) {
         sim.Update();
         std::this_thread::sleep_for(std::chrono::seconds(1));

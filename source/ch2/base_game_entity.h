@@ -1,5 +1,7 @@
 #pragma once
 
+#include <memory>
+
 #include "../core/util.h"
 
 using namespace GameAi::Core;
@@ -16,6 +18,7 @@ public:
     BaseGameEntity(int id);
     virtual ~BaseGameEntity() {}
 
+    virtual void Init() = 0;
     virtual void Update() = 0;
 
     int Id() const;

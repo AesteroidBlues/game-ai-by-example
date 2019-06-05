@@ -1,6 +1,7 @@
 #pragma once
 
 #include "miner.h"
+#include "../core/util.h"
 
 namespace GameAi
 {
@@ -17,7 +18,7 @@ public:
     void Update();
 
 private:
-    Miner m_miner;
+    SharedPtr<Miner> m_miner;
 
 };
 

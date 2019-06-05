@@ -23,9 +23,9 @@ String BaseGameEntity::Name() const
     auto entityType = static_cast<entity_t>(m_Id);
     switch (entityType)
     {
-    case entity_t::miner_irene:
-        return "Miner Irene";
-    case entity_t::husband_doug:
+    case entity_t::programmer_irene:
+        return "Programmer Irene";
+    case entity_t::doug:
         return "Doug";
     default:
         return "Mysterious Stranger";
